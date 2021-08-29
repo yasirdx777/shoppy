@@ -3,29 +3,95 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09823C4548BE9831795968DF /* Pods_shoppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD130F22FC42D7D0E2C5455 /* Pods_shoppy.framework */; };
+		771BF9BD26D8B8FE00D922C7 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771BF9BC26D8B8FE00D922C7 /* SliderTableViewCell.swift */; };
 		7728973C26D2276F00A22482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728973B26D2276F00A22482 /* AppDelegate.swift */; };
 		7728973E26D2276F00A22482 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728973D26D2276F00A22482 /* SceneDelegate.swift */; };
-		7728974026D2276F00A22482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728973F26D2276F00A22482 /* ViewController.swift */; };
-		7728974326D2276F00A22482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7728974126D2276F00A22482 /* Main.storyboard */; };
 		7728974626D2276F00A22482 /* shoppy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7728974426D2276F00A22482 /* shoppy.xcdatamodeld */; };
 		7728974826D2277200A22482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7728974726D2277200A22482 /* Assets.xcassets */; };
 		7728974B26D2277200A22482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7728974926D2277200A22482 /* LaunchScreen.storyboard */; };
+		774E4DF226D3CF2B002FB831 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4DF126D3CF2B002FB831 /* HttpClient.swift */; };
+		774E4DF926D3D2BC002FB831 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4DF826D3D2BC002FB831 /* HomeViewModel.swift */; };
+		774E4DFC26D3D8D4002FB831 /* HttpClientRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E4DFB26D3D8D4002FB831 /* HttpClientRouter.swift */; };
+		77AB286826D22E0500086D3F /* LaunchScreenImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AB286726D22E0500086D3F /* LaunchScreenImage.png */; };
+		77AB286B26D231BC00086D3F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB286A26D231BC00086D3F /* TabBarController.swift */; };
+		77AB286E26D2436800086D3F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB286D26D2436800086D3F /* HomeViewController.swift */; };
+		77F5D76326D91365005E2CD9 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D76226D91365005E2CD9 /* CategoriesTableViewCell.swift */; };
+		77F5D76526D914CB005E2CD9 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D76426D914CB005E2CD9 /* CategoryCollectionViewCell.swift */; };
+		77F5D76726D914F0005E2CD9 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D76626D914F0005E2CD9 /* ProductCollectionViewCell.swift */; };
+		77F5D76926D914FE005E2CD9 /* BestProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D76826D914FE005E2CD9 /* BestProductCollectionViewCell.swift */; };
+		77F5D76B26D9150C005E2CD9 /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D76A26D9150C005E2CD9 /* StoreCollectionViewCell.swift */; };
+		77F5D76D26D9153B005E2CD9 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D76C26D9153B005E2CD9 /* ProductsTableViewCell.swift */; };
+		77F5D76F26D9154D005E2CD9 /* BestProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D76E26D9154D005E2CD9 /* BestProductsTableViewCell.swift */; };
+		77F5D77126D91577005E2CD9 /* StoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D77026D91577005E2CD9 /* StoresTableViewCell.swift */; };
+		77F5D77826DA5B45005E2CD9 /* TableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D77726DA5B45005E2CD9 /* TableViewHeaderView.swift */; };
+		77F5D77B26DA5BCC005E2CD9 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D77A26DA5BCC005E2CD9 /* Style.swift */; };
+		77F5D79026DB55FA005E2CD9 /* Almarai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77F5D78B26DB55FA005E2CD9 /* Almarai-Regular.ttf */; };
+		77F5D79126DB55FA005E2CD9 /* Almarai-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77F5D78C26DB55FA005E2CD9 /* Almarai-Light.ttf */; };
+		77F5D79226DB55FA005E2CD9 /* Almarai-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77F5D78D26DB55FA005E2CD9 /* Almarai-Bold.ttf */; };
+		77F5D79326DB55FA005E2CD9 /* Almarai-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77F5D78E26DB55FA005E2CD9 /* Almarai-ExtraBold.ttf */; };
+		77F5D79626DBBF83005E2CD9 /* ImageAverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D79526DBBF83005E2CD9 /* ImageAverageColor.swift */; };
+		77F5D79826DBBFE0005E2CD9 /* ImageViewGradientFadingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D79726DBBFE0005E2CD9 /* ImageViewGradientFadingEffect.swift */; };
+		77F5D79A26DBC08A005E2CD9 /* UIScreenViewInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5D79926DBC08A005E2CD9 /* UIScreenViewInset.swift */; };
+		77FFC02D26D5E25A00E1294F /* HomeDataModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC01D26D5E25A00E1294F /* HomeDataModel+CoreDataClass.swift */; };
+		77FFC02F26D5E25A00E1294F /* GalleryDataModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC01F26D5E25A00E1294F /* GalleryDataModel+CoreDataClass.swift */; };
+		77FFC03126D5E25A00E1294F /* SectionItemDataModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC02126D5E25A00E1294F /* SectionItemDataModel+CoreDataClass.swift */; };
+		77FFC03326D5E25A00E1294F /* AttributeDataModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC02326D5E25A00E1294F /* AttributeDataModel+CoreDataClass.swift */; };
+		77FFC03526D5E25A00E1294F /* StoreInfoContactDataModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC02526D5E25A00E1294F /* StoreInfoContactDataModel+CoreDataClass.swift */; };
+		77FFC03726D5E25A00E1294F /* StoreInfoDataModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC02726D5E25A00E1294F /* StoreInfoDataModel+CoreDataClass.swift */; };
+		77FFC03926D5E25A00E1294F /* SectionDataModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC02926D5E25A00E1294F /* SectionDataModel+CoreDataClass.swift */; };
+		77FFC03B26D5E25A00E1294F /* ContactDataModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC02B26D5E25A00E1294F /* ContactDataModel+CoreDataClass.swift */; };
+		77FFC04126D7232400E1294F /* CodingUserInfoKey+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FFC04026D7232400E1294F /* CodingUserInfoKey+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E6818E60543A0ACE3DDF297 /* Pods-shoppy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoppy.release.xcconfig"; path = "Target Support Files/Pods-shoppy/Pods-shoppy.release.xcconfig"; sourceTree = "<group>"; };
+		771BF9BC26D8B8FE00D922C7 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		7728973826D2276F00A22482 /* shoppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7728973B26D2276F00A22482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7728973D26D2276F00A22482 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7728973F26D2276F00A22482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7728974226D2276F00A22482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7728974526D2276F00A22482 /* shoppy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shoppy.xcdatamodel; sourceTree = "<group>"; };
 		7728974726D2277200A22482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7728974A26D2277200A22482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7728974C26D2277200A22482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774E4DF126D3CF2B002FB831 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		774E4DF826D3D2BC002FB831 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		774E4DFB26D3D8D4002FB831 /* HttpClientRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientRouter.swift; sourceTree = "<group>"; };
+		77AB286726D22E0500086D3F /* LaunchScreenImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenImage.png; sourceTree = "<group>"; };
+		77AB286A26D231BC00086D3F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		77AB286D26D2436800086D3F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		77F5D76226D91365005E2CD9 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		77F5D76426D914CB005E2CD9 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		77F5D76626D914F0005E2CD9 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		77F5D76826D914FE005E2CD9 /* BestProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		77F5D76A26D9150C005E2CD9 /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		77F5D76C26D9153B005E2CD9 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		77F5D76E26D9154D005E2CD9 /* BestProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestProductsTableViewCell.swift; sourceTree = "<group>"; };
+		77F5D77026D91577005E2CD9 /* StoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresTableViewCell.swift; sourceTree = "<group>"; };
+		77F5D77726DA5B45005E2CD9 /* TableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderView.swift; sourceTree = "<group>"; };
+		77F5D77A26DA5BCC005E2CD9 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		77F5D78B26DB55FA005E2CD9 /* Almarai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Regular.ttf"; sourceTree = "<group>"; };
+		77F5D78C26DB55FA005E2CD9 /* Almarai-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Light.ttf"; sourceTree = "<group>"; };
+		77F5D78D26DB55FA005E2CD9 /* Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Bold.ttf"; sourceTree = "<group>"; };
+		77F5D78E26DB55FA005E2CD9 /* Almarai-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-ExtraBold.ttf"; sourceTree = "<group>"; };
+		77F5D79526DBBF83005E2CD9 /* ImageAverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAverageColor.swift; sourceTree = "<group>"; };
+		77F5D79726DBBFE0005E2CD9 /* ImageViewGradientFadingEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewGradientFadingEffect.swift; sourceTree = "<group>"; };
+		77F5D79926DBC08A005E2CD9 /* UIScreenViewInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenViewInset.swift; sourceTree = "<group>"; };
+		77FFC01D26D5E25A00E1294F /* HomeDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FFC01F26D5E25A00E1294F /* GalleryDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FFC02126D5E25A00E1294F /* SectionItemDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionItemDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FFC02326D5E25A00E1294F /* AttributeDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributeDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FFC02526D5E25A00E1294F /* StoreInfoContactDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreInfoContactDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FFC02726D5E25A00E1294F /* StoreInfoDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreInfoDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FFC02926D5E25A00E1294F /* SectionDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FFC02B26D5E25A00E1294F /* ContactDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77FFC04026D7232400E1294F /* CodingUserInfoKey+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Util.swift"; sourceTree = "<group>"; };
+		80FB43DB52C9E8AA28967F7E /* Pods-shoppy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoppy.debug.xcconfig"; path = "Target Support Files/Pods-shoppy/Pods-shoppy.debug.xcconfig"; sourceTree = "<group>"; };
+		ACD130F22FC42D7D0E2C5455 /* Pods_shoppy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shoppy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +99,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09823C4548BE9831795968DF /* Pods_shoppy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53AC38A2ED83F1B1BB17D279 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80FB43DB52C9E8AA28967F7E /* Pods-shoppy.debug.xcconfig */,
+				4E6818E60543A0ACE3DDF297 /* Pods-shoppy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		771BF9B726D8B82000D922C7 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				771BF9BC26D8B8FE00D922C7 /* SliderTableViewCell.swift */,
+				77F5D76226D91365005E2CD9 /* CategoriesTableViewCell.swift */,
+				77F5D76C26D9153B005E2CD9 /* ProductsTableViewCell.swift */,
+				77F5D76E26D9154D005E2CD9 /* BestProductsTableViewCell.swift */,
+				77F5D77026D91577005E2CD9 /* StoresTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		771BF9B826D8B82B00D922C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77AB286D26D2436800086D3F /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		771BF9B926D8B84800D922C7 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				77F5D76426D914CB005E2CD9 /* CategoryCollectionViewCell.swift */,
+				77F5D76626D914F0005E2CD9 /* ProductCollectionViewCell.swift */,
+				77F5D76826D914FE005E2CD9 /* BestProductCollectionViewCell.swift */,
+				77F5D76A26D9150C005E2CD9 /* StoreCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		7728972F26D2276F00A22482 = {
 			isa = PBXGroup;
 			children = (
 				7728973A26D2276F00A22482 /* shoppy */,
 				7728973926D2276F00A22482 /* Products */,
+				53AC38A2ED83F1B1BB17D279 /* Pods */,
+				B68AC95FB67DC3F033F8FB1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +167,184 @@
 		7728973A26D2276F00A22482 /* shoppy */ = {
 			isa = PBXGroup;
 			children = (
-				7728973B26D2276F00A22482 /* AppDelegate.swift */,
-				7728973D26D2276F00A22482 /* SceneDelegate.swift */,
-				7728973F26D2276F00A22482 /* ViewController.swift */,
-				7728974126D2276F00A22482 /* Main.storyboard */,
-				7728974726D2277200A22482 /* Assets.xcassets */,
-				7728974926D2277200A22482 /* LaunchScreen.storyboard */,
-				7728974C26D2277200A22482 /* Info.plist */,
-				7728974426D2276F00A22482 /* shoppy.xcdatamodeld */,
+				7728975226D229DE00A22482 /* Core */,
+				7728975326D229F000A22482 /* Features */,
 			);
 			path = shoppy;
+			sourceTree = "<group>";
+		};
+		7728975226D229DE00A22482 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				77F5D77926DA5BBF005E2CD9 /* Style */,
+				77FFC03F26D722EC00E1294F /* Extensions */,
+				7728975426D22A0A00A22482 /* AppDelegates */,
+				7728975726D22AC200A22482 /* AppConfig */,
+				774E4DF026D3CEEE002FB831 /* NetworkClient */,
+				7728975626D22A9900A22482 /* LocalDataBase */,
+				7728975826D22AD200A22482 /* Assets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7728975326D229F000A22482 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7728975526D22A7500A22482 /* LaunchScreen */,
+				77AB286926D230D300086D3F /* TabBar */,
+				77AB286C26D2432F00086D3F /* HomeScreen */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7728975426D22A0A00A22482 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				7728973B26D2276F00A22482 /* AppDelegate.swift */,
+				7728973D26D2276F00A22482 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		7728975526D22A7500A22482 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7728974926D2277200A22482 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		7728975626D22A9900A22482 /* LocalDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				7728974426D2276F00A22482 /* shoppy.xcdatamodeld */,
+			);
+			path = LocalDataBase;
+			sourceTree = "<group>";
+		};
+		7728975726D22AC200A22482 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				7728974C26D2277200A22482 /* Info.plist */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		7728975826D22AD200A22482 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				77F5D79426DB5619005E2CD9 /* Fonts */,
+				77AB286726D22E0500086D3F /* LaunchScreenImage.png */,
+				7728974726D2277200A22482 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		774E4DF026D3CEEE002FB831 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				774E4DF126D3CF2B002FB831 /* HttpClient.swift */,
+				774E4DFB26D3D8D4002FB831 /* HttpClientRouter.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		77AB286926D230D300086D3F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				77AB286A26D231BC00086D3F /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		77AB286C26D2432F00086D3F /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				77FFBF6626D5658700E1294F /* DataModels */,
+				77FFBF6526D5657C00E1294F /* ViewModels */,
+				77FFBF6426D5656000E1294F /* Views */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		77F5D77626DA5B2F005E2CD9 /* TableViewHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				77F5D77726DA5B45005E2CD9 /* TableViewHeaderView.swift */,
+			);
+			path = TableViewHeaderView;
+			sourceTree = "<group>";
+		};
+		77F5D77926DA5BBF005E2CD9 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				77F5D77A26DA5BCC005E2CD9 /* Style.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		77F5D79426DB5619005E2CD9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				77F5D78D26DB55FA005E2CD9 /* Almarai-Bold.ttf */,
+				77F5D78E26DB55FA005E2CD9 /* Almarai-ExtraBold.ttf */,
+				77F5D78C26DB55FA005E2CD9 /* Almarai-Light.ttf */,
+				77F5D78B26DB55FA005E2CD9 /* Almarai-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		77FFBF6426D5656000E1294F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				771BF9B826D8B82B00D922C7 /* ViewControllers */,
+				77F5D77626DA5B2F005E2CD9 /* TableViewHeaderView */,
+				771BF9B726D8B82000D922C7 /* TableViewCells */,
+				771BF9B926D8B84800D922C7 /* CollectionViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77FFBF6526D5657C00E1294F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				774E4DF826D3D2BC002FB831 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		77FFBF6626D5658700E1294F /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				77FFC01D26D5E25A00E1294F /* HomeDataModel+CoreDataClass.swift */,
+				77FFC02926D5E25A00E1294F /* SectionDataModel+CoreDataClass.swift */,
+				77FFC02126D5E25A00E1294F /* SectionItemDataModel+CoreDataClass.swift */,
+				77FFC02326D5E25A00E1294F /* AttributeDataModel+CoreDataClass.swift */,
+				77FFC01F26D5E25A00E1294F /* GalleryDataModel+CoreDataClass.swift */,
+				77FFC02B26D5E25A00E1294F /* ContactDataModel+CoreDataClass.swift */,
+				77FFC02726D5E25A00E1294F /* StoreInfoDataModel+CoreDataClass.swift */,
+				77FFC02526D5E25A00E1294F /* StoreInfoContactDataModel+CoreDataClass.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		77FFC03F26D722EC00E1294F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77FFC04026D7232400E1294F /* CodingUserInfoKey+Util.swift */,
+				77F5D79526DBBF83005E2CD9 /* ImageAverageColor.swift */,
+				77F5D79726DBBFE0005E2CD9 /* ImageViewGradientFadingEffect.swift */,
+				77F5D79926DBC08A005E2CD9 /* UIScreenViewInset.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B68AC95FB67DC3F033F8FB1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACD130F22FC42D7D0E2C5455 /* Pods_shoppy.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7728974F26D2277200A22482 /* Build configuration list for PBXNativeTarget "shoppy" */;
 			buildPhases = (
+				98536E52654C6EF8EB309907 /* [CP] Check Pods Manifest.lock */,
 				7728973426D2276F00A22482 /* Sources */,
 				7728973526D2276F00A22482 /* Frameworks */,
 				7728973626D2276F00A22482 /* Resources */,
+				3A28FC73FDFD3F81C3D6A4CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,37 +406,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F5D79026DB55FA005E2CD9 /* Almarai-Regular.ttf in Resources */,
+				77F5D79126DB55FA005E2CD9 /* Almarai-Light.ttf in Resources */,
+				77F5D79326DB55FA005E2CD9 /* Almarai-ExtraBold.ttf in Resources */,
 				7728974B26D2277200A22482 /* LaunchScreen.storyboard in Resources */,
+				77AB286826D22E0500086D3F /* LaunchScreenImage.png in Resources */,
 				7728974826D2277200A22482 /* Assets.xcassets in Resources */,
-				7728974326D2276F00A22482 /* Main.storyboard in Resources */,
+				77F5D79226DB55FA005E2CD9 /* Almarai-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A28FC73FDFD3F81C3D6A4CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shoppy/Pods-shoppy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shoppy/Pods-shoppy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shoppy/Pods-shoppy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98536E52654C6EF8EB309907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shoppy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7728973426D2276F00A22482 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7728974026D2276F00A22482 /* ViewController.swift in Sources */,
+				77F5D79826DBBFE0005E2CD9 /* ImageViewGradientFadingEffect.swift in Sources */,
+				774E4DFC26D3D8D4002FB831 /* HttpClientRouter.swift in Sources */,
 				7728973C26D2276F00A22482 /* AppDelegate.swift in Sources */,
+				77F5D76B26D9150C005E2CD9 /* StoreCollectionViewCell.swift in Sources */,
+				77FFC03526D5E25A00E1294F /* StoreInfoContactDataModel+CoreDataClass.swift in Sources */,
+				771BF9BD26D8B8FE00D922C7 /* SliderTableViewCell.swift in Sources */,
+				77AB286B26D231BC00086D3F /* TabBarController.swift in Sources */,
+				77FFC02F26D5E25A00E1294F /* GalleryDataModel+CoreDataClass.swift in Sources */,
 				7728974626D2276F00A22482 /* shoppy.xcdatamodeld in Sources */,
+				774E4DF926D3D2BC002FB831 /* HomeViewModel.swift in Sources */,
+				77F5D76326D91365005E2CD9 /* CategoriesTableViewCell.swift in Sources */,
+				77FFC03726D5E25A00E1294F /* StoreInfoDataModel+CoreDataClass.swift in Sources */,
+				77FFC04126D7232400E1294F /* CodingUserInfoKey+Util.swift in Sources */,
+				77FFC03326D5E25A00E1294F /* AttributeDataModel+CoreDataClass.swift in Sources */,
 				7728973E26D2276F00A22482 /* SceneDelegate.swift in Sources */,
+				774E4DF226D3CF2B002FB831 /* HttpClient.swift in Sources */,
+				77FFC03B26D5E25A00E1294F /* ContactDataModel+CoreDataClass.swift in Sources */,
+				77F5D79A26DBC08A005E2CD9 /* UIScreenViewInset.swift in Sources */,
+				77F5D77826DA5B45005E2CD9 /* TableViewHeaderView.swift in Sources */,
+				77FFC03126D5E25A00E1294F /* SectionItemDataModel+CoreDataClass.swift in Sources */,
+				77F5D76926D914FE005E2CD9 /* BestProductCollectionViewCell.swift in Sources */,
+				77F5D77B26DA5BCC005E2CD9 /* Style.swift in Sources */,
+				77F5D76726D914F0005E2CD9 /* ProductCollectionViewCell.swift in Sources */,
+				77F5D77126D91577005E2CD9 /* StoresTableViewCell.swift in Sources */,
+				77AB286E26D2436800086D3F /* HomeViewController.swift in Sources */,
+				77FFC02D26D5E25A00E1294F /* HomeDataModel+CoreDataClass.swift in Sources */,
+				77F5D79626DBBF83005E2CD9 /* ImageAverageColor.swift in Sources */,
+				77F5D76D26D9153B005E2CD9 /* ProductsTableViewCell.swift in Sources */,
+				77F5D76F26D9154D005E2CD9 /* BestProductsTableViewCell.swift in Sources */,
+				77F5D76526D914CB005E2CD9 /* CategoryCollectionViewCell.swift in Sources */,
+				77FFC03926D5E25A00E1294F /* SectionDataModel+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7728974126D2276F00A22482 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7728974226D2276F00A22482 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7728974926D2277200A22482 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,16 +631,19 @@
 		};
 		7728975026D2277200A22482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FB43DB52C9E8AA28967F7E /* Pods-shoppy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW75L9NX28;
-				INFOPLIST_FILE = shoppy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/shoppy/Core/AppConfig/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "smart-id.shoppy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -306,16 +653,19 @@
 		};
 		7728975126D2277200A22482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6818E60543A0ACE3DDF297 /* Pods-shoppy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW75L9NX28;
-				INFOPLIST_FILE = shoppy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/shoppy/Core/AppConfig/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "smart-id.shoppy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

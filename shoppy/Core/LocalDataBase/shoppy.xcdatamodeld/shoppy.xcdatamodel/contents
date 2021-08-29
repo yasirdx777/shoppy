@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Attribute" representedClassName=".AttributeDataModel" syncable="YES" codeGenerationType="category">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="String"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SectionItem" inverseName="attributes" inverseEntity="SectionItem"/>
+        <fetchIndex name="byDataIndex">
+            <fetchIndexElement property="createdAt" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="Contact" representedClassName=".ContactDataModel" syncable="YES" codeGenerationType="category">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="closeDay" optional="YES" attributeType="String"/>
+        <attribute name="closeHour" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="long" optional="YES" attributeType="String"/>
+        <attribute name="openDay" optional="YES" attributeType="String"/>
+        <attribute name="openHour" optional="YES" attributeType="String"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SectionItem" inverseName="contact" inverseEntity="SectionItem"/>
+    </entity>
+    <entity name="Gallery" representedClassName=".GalleryDataModel" syncable="YES" codeGenerationType="category">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="item" optional="YES" attributeType="String"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SectionItem" inverseName="galleries" inverseEntity="SectionItem"/>
+        <fetchIndex name="byDataIndex">
+            <fetchIndexElement property="createdAt" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="Home" representedClassName=".HomeDataModel" syncable="YES" codeGenerationType="category">
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Section" inverseName="parent" inverseEntity="Section"/>
+    </entity>
+    <entity name="Section" representedClassName=".SectionDataModel" syncable="YES" codeGenerationType="category">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sectionID" optional="YES" attributeType="String"/>
+        <attribute name="sectionType" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SectionItem" inverseName="parent" inverseEntity="SectionItem"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Home" inverseName="data" inverseEntity="Home"/>
+        <fetchIndex name="byDataIndex">
+            <fetchIndexElement property="createdAt" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="SectionItem" representedClassName=".SectionItemDataModel" syncable="YES" codeGenerationType="category">
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="categoryName" optional="YES" attributeType="String"/>
+        <attribute name="cover" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="isWarranty" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="itemDescription" optional="YES" attributeType="String"/>
+        <attribute name="monthlyInstallment" optional="YES" attributeType="String"/>
+        <attribute name="monthsOfDeduction" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="parentID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="slug" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="visitsCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="warrantyDuration" optional="YES" attributeType="String"/>
+        <attribute name="warrantyLength" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+        <relationship name="attributes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Attribute" inverseName="parent" inverseEntity="Attribute"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="parent" inverseEntity="Contact"/>
+        <relationship name="galleries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Gallery" inverseName="parent" inverseEntity="Gallery"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="items" inverseEntity="Section"/>
+        <relationship name="storeInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoreInfo" inverseName="parent" inverseEntity="StoreInfo"/>
+        <fetchIndex name="byDataIndex">
+            <fetchIndexElement property="createdAt" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="StoreInfo" representedClassName=".StoreInfoDataModel" syncable="YES" codeGenerationType="category">
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="cover" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="slug" optional="YES" attributeType="String"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoreInfoContact" inverseName="parent" inverseEntity="StoreInfoContact"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SectionItem" inverseName="storeInfo" inverseEntity="SectionItem"/>
+    </entity>
+    <entity name="StoreInfoContact" representedClassName=".StoreInfoContactDataModel" syncable="YES" codeGenerationType="category">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="closeDay" optional="YES" attributeType="String"/>
+        <attribute name="closeHour" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="long" optional="YES" attributeType="String"/>
+        <attribute name="openDay" optional="YES" attributeType="String"/>
+        <attribute name="openHour" optional="YES" attributeType="String"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoreInfo" inverseName="contact" inverseEntity="StoreInfo"/>
+    </entity>
+    <elements>
+        <element name="Attribute" positionX="410.654052734375" positionY="-104.9492492675781" width="128" height="89"/>
+        <element name="Contact" positionX="495.864501953125" positionY="331.3157348632812" width="128" height="178"/>
+        <element name="Gallery" positionX="495.1228637695312" positionY="0.33331298828125" width="128" height="74"/>
+        <element name="Home" positionX="45" positionY="-108" width="128" height="59"/>
+        <element name="Section" positionX="-165.4046630859375" positionY="-95.96788024902344" width="128" height="119"/>
+        <element name="SectionItem" positionX="137.4758911132813" positionY="-279.0985870361328" width="128" height="419"/>
+        <element name="StoreInfo" positionX="325.4136962890625" positionY="157.9756469726562" width="128" height="193"/>
+        <element name="StoreInfoContact" positionX="54" positionY="-99" width="128" height="164"/>
+    </elements>
+</model>
