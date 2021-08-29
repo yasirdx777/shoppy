@@ -171,16 +171,6 @@ class BestProductCollectionViewCell: UICollectionViewCell {
                 
                 self.bestProductBackgroundView.backgroundColor = productImageColor
                 
-                let gradientLayer = CAGradientLayer()
-                gradientLayer.frame = self.bounds
-                
-                gradientLayer.colors = [
-                    UIColor.white.withAlphaComponent(1).cgColor,
-                    UIColor.white.withAlphaComponent(0).cgColor]
-                
-                gradientLayer.startPoint = CGPoint(x: 1, y: 0.5)
-                gradientLayer.endPoint =  CGPoint(x: 0, y: 0.5)
-                
                 self.bestProductImage.image = productImage
                 
                 self.bestProductImage.addGradientFadingLayerEffect()
