@@ -8,4 +8,4 @@ Open source project to show case cache Http reposnse into Core Data
 - MVVM
 
 
-![alt text](https://raw.githubusercontent.com/yasirdx777/shoppy/main/layout.png)
+![alt text](https://raw.githubusercontent.com/yasirdx777/shoppy/blob/main/layout.png)
