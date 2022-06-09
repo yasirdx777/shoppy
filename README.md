@@ -1,6 +1,6 @@
 # Shoppy
 
-Open source project to show case cache Http reposnse into Core Data
+Open source project to show case cache Http response into Core Data
 
 ## Features
 
